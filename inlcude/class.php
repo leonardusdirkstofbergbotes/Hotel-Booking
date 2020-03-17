@@ -51,20 +51,20 @@ $start_date = new DateTime($_GET['from']);
             $this->amenity[] = $amen_name;
         }
         public function display() {
-            echo "<div class=\"wrapper\">";
-            echo "<h1 class=\"name\"> $this->name </h1>";
-            echo "<h4 class=\"description\"> $this->description </h4>";
-            echo "<h2 class=\"price\"> R$this->price</h2>";
+            echo "<div class=\"\">";
+            echo "<h1 class=\"\"> $this->name </h1>";
+            echo "<h4 class=\"\"> $this->description </h4>";
+            echo "<h2 class=\"\"> R$this->price</h2>";
             for ($n = 0; $n < $this->stars; ++$n) {
-                echo "<img class=\"stars\" src=\"images/star.png\">";
+                echo "<img class=\"\" src=\"images/star.png\">";
             };
             echo "<img src=\"images/$this->img\">";
-            echo "<form action=\"booking_page.php\" method=\"post\">";
+            echo "<form action=\".php\" method=\"post\">";
             echo "<button type=\"submit\" name=\"hotel_id\" value=\"$this->id_name\">View more</button>";
             echo "</form>";
             foreach ($this->amenity as $array => $array_a) {
                 foreach ($array_a as $key => $value) {
-                echo "<img class=\"amenities\" src=\"images/icons/$value.png\">";
+                echo "<img class=\"\" src=\"images/icons/$value.png\">";
                 }
             };
             echo "</div>";
