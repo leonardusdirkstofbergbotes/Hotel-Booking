@@ -15,8 +15,8 @@
 
     require "include/hotel_info.php";
 
-    $hotel1->amen(['Pool', 'Wifi', 'Bar','No pets allowed','Winery','Playroom']);
-    $hotel1->amen_description(['Warm temperature swimming pool', 'Unlimited vast wifi','Free round of drinks when check in',]);
+    $hotel1->amen(['bar','no_pets','winery']);
+    $hotel1->amen_description(['Warm temperature swimming pool', 'Unlimited fast wifi','Free round of drinks when check in',]);
     $hotel1->description('The Biltmore hotel is located in the centre of Cape Town.
                         You have accessibility to all the bars, restaurants and vibrate buzz roaming around in the atmosphere.
                         Its the perfect spot to get your mood sky high.The Biltmore hotel wants their guests to feel
@@ -25,7 +25,7 @@
                         if more than four persons, so do not hesitate to increase your company or your stay');
 
 
-    $hotel2->amen(['Pool','Pet Friendly','Underwater dining room','Jacuzzi','Wifi','Bar','Strawberry Farm']);
+    $hotel2->amen(['bar','farm']);
     $hotel2->amen_description(['Free strawberries bucket','Enclosed Jacuzzi for couples','High speed wifi']);
     $hotel2->description('Bikini Bottom is focused on giving their guests a relaxed discreet setting.
                     From luxurious suites and comfortable living, your staying couldnt get any better.
@@ -35,7 +35,7 @@
                     The most clean and modern experience of all time. ');
 
 
-    $hotel3->amen(['Wifi','Bar','Play room','Free Safari Tour','No pets allowed']);
+    $hotel3->amen(['wifi','tour','no_pets']);
     $hotel3->amen_description(['Limited wifi','24Hour playroom','Bar available if over 21']);
     $hotel3->description('Queens hotel is located on the outskirts of Cape Town.
                         It is in the middle of a dry and deserted area with no interference of noise vehicles or vendors.
@@ -44,7 +44,7 @@
                         your needs');
 
 
-    $hotel4->amen(['No wifi','pets','Indoor planeterium','Wellness']);
+    $hotel4->amen(['no_wifi','planet','gym']);
     $hotel4->amen_description(['Data packages available for sale','24 hour pet care','24 hour Jacuzzi',
     'Free wellness packages']);
     $hotel4->description('Daredevil hotel is situated at the top of the devils peak .
