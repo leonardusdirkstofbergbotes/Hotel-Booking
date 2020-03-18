@@ -24,7 +24,7 @@
                                 Its location is far from the suburbs and is perfect for a luxury accommodation. 
                                 The most clean and modern experience of all time. ');
             $hotel2->img("car.jpg");
-            $hotel2->amen(['pool', 'pets', 'camp']);
+            $hotel2->amen(['pool', 'pets','wifi', 'jacuzzi']);
 
 
         $hotel3 = new Hotel;
@@ -49,6 +49,6 @@
                                 Serene views and a glass ceiling pool house. 
                                 It is 3km from a wellness resort so all guests are welcome to experience the most comfortable stay. ');
             $hotel4->img("baloon.png");
-            $hotel4->amen(['wifi','jacuzzi']);
+            $hotel4->amen(['pets','jacuzzi']);
 
 ?>
