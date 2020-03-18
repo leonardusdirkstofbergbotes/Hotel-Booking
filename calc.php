@@ -1,7 +1,10 @@
 <?php 
     session_start();
-    $_SESSION['from'] = $_GET['from'];
-    $_SESSION['to'] = $_GET['to'];
+    $_SESSION['from'] = $_POST['from'];
+    $_SESSION['to'] = $_POST['to'];
+    $_SESSION['username'] = $_POST['username'];
+    $_SESSION['surname'] = $_POST['surname'];
+    $_SESSION['email'] = $_POST['email'];
 ?>
 
 <!DOCTYPE html>
