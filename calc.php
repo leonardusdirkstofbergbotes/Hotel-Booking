@@ -12,14 +12,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Compare Hotels</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
 <?php
 
-    require "config/hotel_info.php";
+    require "include/hotel_info.php";
 
         $hotel1->display(); 
         $hotel2->display(); 
