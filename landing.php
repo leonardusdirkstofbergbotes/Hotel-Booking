@@ -33,6 +33,13 @@
             
             <label for="fname">Email Address</label>
             <input type="text" id="fname" name="email" placeholder="Your Email..">
+
+            
+            <label for="In">Book In date</label>
+            <input type="date" id="date" name="date">
+
+            <label for="Out">Book out date</label>
+            <input type="date" id="date" name="date"><br/>
         
             <input type="submit" value="Submit">
           </form>
