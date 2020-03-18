@@ -78,11 +78,11 @@ $start_date = new DateTime($_SESSION['from']);
                 }    
 
             };
-            echo "<form action=\"booking_page.php\" method=\"post\">";
+            echo "<form action=\"view_more.php\" method=\"post\">";
             echo "<button type=\"submit\" name=\"hotel_id\" value=\"$this->id_name\" id=\"view_more\">View more</button>";
             echo "</form>";
 
-            echo "<a href=\"view_more.php\"><button> Book </button></a>";
+            echo "<a href=\"booking_page.php\"><button> Book </button></a>";
 
             echo "</div>";
                 
