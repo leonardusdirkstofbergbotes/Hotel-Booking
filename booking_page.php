@@ -16,7 +16,7 @@
     require "include/hotel_info.php";
 
     $hotel1->amen(['bar','no_pets','winery']);
-    $hotel1->amen_description(['Warm temperature swimming pool', 'Unlimited fast wifi','Free round of drinks when check in',]);
+    $hotel1->amen_description(['Warm temperature swimming pool', 'Unlimited fast wifi','Free round of drinks when check in', 'There is a free tour on-site winery']);
     $hotel1->description('The Biltmore hotel is located in the centre of Cape Town.
                         You have accessibility to all the bars, restaurants and vibrate buzz roaming around in the atmosphere.
                         Its the perfect spot to get your mood sky high.The Biltmore hotel wants their guests to feel

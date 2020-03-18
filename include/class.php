@@ -59,19 +59,12 @@ $start_date = new DateTime($_SESSION['from']);
         public function display() {
             echo "<div class=\"wrapper mar_pad border\">";
             echo "<h1 class=\"name\"> $this->name </h1>";
+            echo "<img class=\"border\" src=\"images/$this->img\">";
             echo "<h4 class=\"description\"> $this->description </h4>";
             echo "<h2 class=\"price\"> R$this->price</h2>";
             for ($n = 0; $n < $this->stars; ++$n) {
                 echo "<img class=\"stars\" src=\"images/star.png\">";
             };
-            echo "<img class=\"border\" src=\"images/$this->img\">";
-            // echo "<a href=\"view_more.php\"><button> Book </button></a>";
-            echo "<form action=\"view_more.php\" method=\"post\">";
-            echo "<button type=\"submit\" name=\"book\" value=\"$this->id_name\" id=\"book\">book</button>";
-            echo "</form>";
-            echo "<form action=\"booking_page.php\" method=\"post\">";
-            echo "<button type=\"submit\" name=\"hotel_id\" value=\"$this->id_name\" id=\"view_more\">View more</button>";
-            echo "</form>";
             foreach ($this->amenity as $array_pic => $array_pic_a) {
                 foreach ($array_pic_a as $pic_key => $pic_value) {
                 echo "<img class=\"amenities mar_pad\" src=\"images/icons/$pic_value.png\">";
@@ -85,6 +78,12 @@ $start_date = new DateTime($_SESSION['from']);
                 }    
 
             };
+            echo "<form action=\"booking_page.php\" method=\"post\">";
+            echo "<button type=\"submit\" name=\"hotel_id\" value=\"$this->id_name\" id=\"view_more\">View more</button>";
+            echo "</form>";
+
+            echo "<a href=\"view_more.php\"><button> Book </button></a>";
+
             echo "</div>";
                 
         }
