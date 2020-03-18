@@ -10,6 +10,17 @@
     <title>Confirm details</title>
 </head>
 <body>
+
+<form action="email_handler.php"> 
+<button> thats fine </button>
+</form>
+
+<form action="calc.php"> 
+<button> No!!! </button>
+</form>
+
+
+
     
 </body>
 </html>

@@ -1,3 +1,15 @@
+<?php 
+    session_start();
+    if (isset($_POST['lets_start'])) {
+        $_SESSION['from'] = $_POST['in'];
+        $_SESSION['to'] = $_POST['out'];
+        $_SESSION['username'] = $_POST['firstname'];
+        $_SESSION['surname'] = $_POST['lastname'];
+        $_SESSION['email'] = $_POST['email'];
+        header("Location: calc.php");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +27,7 @@
         
     <div class="container">
 
-        <form action="calc.php" method="post">
+        <form method="post">
             <label for="fname">First Name</label>
             <input type="text" id="fname" name="firstname" placeholder="Your name..">
       
@@ -31,7 +43,7 @@
           <label for="Out">Book out date</label>
           <input type="date" id="date" name="out">
     
-          <button>Submit</button>
+          <button type="submit" name="lets_start">Submit</button>
         </form>
 
     </div>
