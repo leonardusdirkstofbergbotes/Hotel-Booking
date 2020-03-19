@@ -40,7 +40,7 @@ try {
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Booking is successful';
     $mail->Body    = "Thank you ".$_SESSION['username']." ".$_SESSION['surname']." for booking at Hotel Monkey<br>
-                     <p> You are visiting the X Hotel from ".$_SESSION['from']." to " .$_SESSION['to']."
+                     <p> You are visiting from ".$_SESSION['from']." to " .$_SESSION['to']."
                       ";
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
