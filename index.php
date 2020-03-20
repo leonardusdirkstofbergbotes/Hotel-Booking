@@ -21,7 +21,7 @@
 <body>
     
     <video autoplay muted loop class="myVideo">
-        <source src="video1.mp4" type="video/mp4">
+        <source src="video2.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
       </video>
         

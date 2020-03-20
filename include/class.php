@@ -57,17 +57,19 @@ $start_date = new DateTime($_SESSION['from']);
         }
 
         public function display() {
-            echo "<div class=\"wrapper mar_pad border\">";
+            echo "<div class=\"wrapper margin border\">";
+            echo "<div class=\"inner\">";
+            echo "</div>";
             echo "<h1 class=\"name\"> $this->name </h1>";
-            echo "<img class=\"border\" src=\"images/$this->img\">";
             echo "<h4 class=\"description\"> $this->description </h4>";
             echo "<h2 class=\"price\"> R$this->price</h2>";
+            
             for ($n = 0; $n < $this->stars; ++$n) {
                 echo "<img class=\"stars\" src=\"images/star.png\">";
             };
             foreach ($this->amenity as $array_pic => $array_pic_a) {
                 foreach ($array_pic_a as $pic_key => $pic_value) {
-                echo "<img class=\"amenities mar_pad\" src=\"images/icons/$pic_value.png\">";
+                echo "<img class=\"amenities margin\" src=\"images/icons/$pic_value.png\">";
                 }
             
             }   
@@ -86,7 +88,6 @@ $start_date = new DateTime($_SESSION['from']);
             echo "<button type=\"submit\" name=\"hotel_id\" value=\"$this->id_name\" id=\"booking\">book</button>";
             echo "</form>";
             // echo "<a href=\"booking_page.php\"><button> Book </button></a>";
-
             echo "</div>";
                 
         }
@@ -94,7 +95,14 @@ $start_date = new DateTime($_SESSION['from']);
     }
 ?>
 
-
-
-    
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+    <link rel="stylesheet" href="css/styles_hotel.css" type="text/css">
+</head>
+<body>    
+</body>
+</html>
