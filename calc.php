@@ -1,10 +1,5 @@
 <?php 
     session_start();
-    $_SESSION['from'] = $_POST['in'];
-    $_SESSION['to'] = $_POST['out'];
-    $_SESSION['username'] = $_POST['firstname'];
-    $_SESSION['surname'] = $_POST['lastname'];
-    $_SESSION['email'] = $_POST['email'];
 ?>
 
 <!DOCTYPE html>
