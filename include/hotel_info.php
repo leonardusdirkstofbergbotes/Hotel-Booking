@@ -13,7 +13,7 @@
                 accustomed to the modern tradition of the spot.It gives you the opportunity to meet different people
                 from abroad during a meet and greet offered by the hotel.The biltmore hotel offers a 10% discount
                 if more than four persons, so do not hesitate to increase your company or your stay');
-            $hotel1->img("cat.jpg");
+            $hotel1->img("images/Bikini Bottom/underwater.jpg");
             $hotel1->amen(['wifi', 'pool', 'parking', 'play', 'bar','no_pets','winery']);
 
 

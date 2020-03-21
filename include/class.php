@@ -60,6 +60,7 @@ $start_date = new DateTime($_SESSION['from']);
             echo "<div class=\"wrapper margin border\">";
             echo "<div class=\"inner\">";
             echo "</div>";
+            echo "<img src=\"$this->img\">";
             echo "<h1 class=\"name\"> $this->name </h1>";
             echo "<h4 class=\"description\"> $this->description </h4>";
             echo "<h2 class=\"price\"> R$this->price</h2>";

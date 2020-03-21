@@ -51,6 +51,10 @@
     <script>
     datein.min = new Date().toISOString().split("T")[0];
     dateout.min = new Date().toISOString().split("T")[0];
+    var now = new Date(),
+    minDate = now.toISOString().substring(0,10);
+
+$('#dateout').prop('min', minDate);
     </script>
 </body>
 </html>
