@@ -63,22 +63,22 @@
             switch ($_POST['hotel_id']) {
             case '1':
                 echo "<b>";
-                echo $hotel1->price;
+                echo $hotel1->total_cost;
                 echo "</b>";
                 break;
             case '2':
                 echo "<b>";
-                echo $hotel2->price;
+                echo $hotel2->total_cost;
                 echo "</b>";
                 break;
             case '3':
                 echo "<b>";
-                echo $hotel3->price;
+                echo $hotel3->total_cost;
                 echo "</b>";
                 break;
             case '4':
                 echo "<b>";
-                echo $hotel4->price;
+                echo $hotel4->total_cost;
                 echo "</b>";
                 break;
             } ?> 

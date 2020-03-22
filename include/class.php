@@ -33,6 +33,7 @@ $start_date = new DateTime($_SESSION['from']);
         public $img;
         public $amenity = [];
         public $amen_describe = [];
+        public $total_cost;
 
         // public function total_days($from_date, $to_date) {
         //     $start_date = new DateTime($from_date);
@@ -54,7 +55,8 @@ $start_date = new DateTime($_SESSION['from']);
         }
 
         public function rate($var_price) {
-            $this->price = $var_price * $GLOBALS["diff"];
+            $this->price = $var_price;
+            $this->total_cost = $var_price * $GLOBALS["diff"];
         }
 
         public function stars($var_stars) {
@@ -90,6 +92,7 @@ $start_date = new DateTime($_SESSION['from']);
             echo "<hr/>";
             echo "<h2 class=\"cost\">Total Cost:</h2>";
             echo "<h2 class=\"price\"> R$this->price</h2>";
+            echo $this->total_cost;
             echo "<hr/>";
 
             /*amenities*/
