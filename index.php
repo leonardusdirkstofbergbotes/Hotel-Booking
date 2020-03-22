@@ -18,6 +18,7 @@
     <title>Hotel Monkey</title>
     <!--google font link-->
     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--Css stylesheet-->
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
@@ -54,10 +55,7 @@
     <script>
     datein.min = new Date().toISOString().split("T")[0];
     dateout.min = new Date().toISOString().split("T")[0];
-    var now = new Date(),
-    minDate = now.toISOString().substring(0,10);
-
-$('#dateout').prop('min', minDate);
+    
     </script>
 </body>
 </html>
