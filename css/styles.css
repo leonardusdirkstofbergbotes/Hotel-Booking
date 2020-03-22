@@ -1,3 +1,23 @@
+body{
+  padding:0;
+  margin:0;
+  font-family: 'Lora', serif;
+}
+
+.container {
+  background:rgb(219, 198, 152);
+  width:25%;
+  margin-top:40px;
+  margin-left:30px;
+  height:80vh;
+  padding: 20px 20px 20px 20px;
+  border-radius: 5px;
+  background:rgba(46, 45, 45, 0.5);
+  position: fixed;
+  font-size:18px;
+  font-family: 'Lora', serif;
+}
+/***FORM INPUT AREA*****/
 input[type=text], select, textarea {
   width: 100%;
   padding: 10px;
@@ -8,33 +28,14 @@ input[type=text], select, textarea {
   margin-bottom: 20px;
   resize: vertical;
   display:flex;
-  font-family: 'Roboto', sans-serif;    
+  font-family: 'Lora', serif;
 }
 
 input[type=submit]:hover {
   background-color: #9c8a6d;
 }
 
-.container {
-   background:rgb(219, 198, 152);
-   width:25%;
-   margin-top:40px;
-   margin-left:30px;
-   height:80vh;
-   padding: 20px 20px 20px 20px;
-   border-radius: 5px;
-   background:rgba(46, 45, 45, 0.5);
-   position: fixed;
-   font-size:18px;
-   font-family: 'Lora', serif;
-}
-
-body{
-   padding:0;
-   margin:0;
-   font-family: 'Lora', serif;
-}
-
+/*DATE input edit*/
 input[type=date], select{
  
   outline:none;
@@ -48,13 +49,14 @@ input[type=date], select{
   resize: vertical;
   display:flex;
   font-family: 'Lora', serif;
-  
 }
 
 label{
-   color:rgb(236, 230, 230);
-   padding-top:20px;
+  color:rgb(236, 230, 230);
+  padding-top:20px;
 }
+
+/****button edit****/
 .btn{  
   background:linear-gradient(to left, rgb(89, 152, 211),rgb(87, 55, 87));
   width:100%;
@@ -68,14 +70,15 @@ label{
   color:rgb(240, 229, 229);
   font-size:18px;
   font-family: 'Lora', serif;
-
 }
+
 .btn span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
+
 .btn span:after {
   content: '\00bb';
   position: absolute;
@@ -100,13 +103,55 @@ label{
 
 .btn:active{
   transform: translateY(4px);
-
 }
 
+/***video*/
 .myVideo {
   position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%; 
-  min-height: 100%;
+  min-height: 100vh;
 }
+
+/************************MEDIA QUERIES*****************/
+
+/*Form*/
+@media screen and (max-width:720px){
+  .container{
+    width:100%;
+    margin:0;
+    height:100vh;
+    padding:0;
+    text-align:center;
+  }
+  input[type=text], select, textarea {
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  input[type=date], select{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .btn{
+    width:50%;
+  }
+}
+
+@media screen and (max-width:768px){
+  input[type=text], select, textarea {
+    padding:5px;
+  }
+  input[type=date], select{
+    padding:5px;
+  }
+  .btn{
+    height:30px;
+  }
+  form{
+    margin-top:30px;
+  }
+}
+
