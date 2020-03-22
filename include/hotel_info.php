@@ -2,19 +2,17 @@
 
     require "include/class.php";
 
-        $hotel1 = new Hotel;
+        $hotel1 = new Hotel; 
             $hotel1->id_name(1);
             $hotel1->name('The Biltmore Hotel');
             $hotel1->stars(4);
             $hotel1->rate(500);
-            $hotel1->description('The Biltmore hotel is located in the centre of Cape Town.
+            $hotel1->description('<h1>The Biltmore</h1><p>The Biltmore hotel is located in the centre of Cape Town.
                 You have accessibility to all the bars, restaurants and vibrate buzz roaming around in the atmosphere.
                 Its the perfect spot to get your mood sky high.The Biltmore hotel wants their guests to feel
-                accustomed to the modern tradition of the spot.It gives you the opportunity to meet different people
-                from abroad during a meet and greet offered by the hotel.The biltmore hotel offers a 10% discount
-                if more than four persons, so do not hesitate to increase your company or your stay');
-            $hotel1->img("cat.jpg");
-            $hotel1->amen(['wifi', 'pool', 'parking', 'play', 'bar','no_pets','winery']);
+                accustomed to the modern tradition of the spot.</p>');
+            $hotel1->img("./images/biltmore.jpg");
+            $hotel1->amen(['wifi', 'play', 'bar','no_pets', 'tour']);
 
 
         $hotel2 = new Hotel;
@@ -22,13 +20,13 @@
             $hotel2->name('Bikini Bottom');
             $hotel2->stars(2);
             $hotel2->rate(700);
-            $hotel2->description('Bikini Bottom is focused on giving their guests a relaxed discreet setting.
+            $hotel2->description('<h1>Bikini Bottom</h1><p>Bikini Bottom is focused on giving their guests a relaxed discreet setting.
                 From luxurious suites and comfortable living, your staying couldnt get any better.
                 Its location is far from the suburbs and is perfect for a luxury accommodation with an amazing front
                 view.It brings a variety of services at your comfort making you feel far from home in all ways.All
                 your desires and cravings for some alone excursion time is brought to you by Bikini Bottom.
-                The most clean and modern experience of all time. ');
-            $hotel2->img("car.jpg");
+                The most clean and modern experience of all time. </p>');
+            $hotel2->img("./images/bikini.jpg");
             $hotel2->amen(['bar','farm','pool', 'pets','wifi', 'jacuzzi']);
 
 
@@ -37,12 +35,12 @@
             $hotel3->name('Queens Hotel');
             $hotel3->stars(5);
             $hotel3->rate(1200);
-            $hotel3->description('Queens hotel is located on the outskirts of Cape Town.
+            $hotel3->description('<h1>Queens</h1><p>Queens hotel is located on the outskirts of Cape Town.
                 It is in the middle of a dry and deserted area with no interference of noise vehicles or vendors.
                 You receive a full on tour guide and  safari  and get to experience the sunset on a top tree house in
                 the middle of the safari.If you are looking for a comfortable place to escape the world in the wild we are perfectly suited for
-                your needs');
-            $hotel3->img("baloon.png");
+                your needs</p>');
+            $hotel3->img("./images/queens.png");
             $hotel3->amen(['bar', 'play','wifi','tour','no_pets']);
 
 
@@ -51,14 +49,14 @@
             $hotel4->name('Dare Devil Hotel');
             $hotel4->stars(4);
             $hotel4->rate(600);
-            $hotel4->description('Daredevil hotel is situated at the top of the devils peak .
+            $hotel4->description('<h1>Dare Devil</h1><p>Daredevil hotel is situated at the top of the devils peak .
                 The weather is super cool at night and warm in the mornings as it instantly sets the mood for the day.
                 Serene views that you can use to your advantage for those dazzling images including
                 a glass ceiling pool house that will set the house in a monumental island experience.You will be
                 able to enjoy your the casuality of your stay by spending time with family and friends inside the
                 planeterium.  It is 3km from a wellness resort so all guests are welcome to experience the most
-                comfortable stay');
-            $hotel4->img("baloon.png");
+                comfortable stay.</p>');
+            $hotel4->img("./images/devil.jpg");
             $hotel4->amen(['pets','jacuzzi','no_wifi','planet','gym']);
 
 ?>

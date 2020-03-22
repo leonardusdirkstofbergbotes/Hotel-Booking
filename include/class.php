@@ -1,3 +1,20 @@
+ 
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <title>Class</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles_hotel.css" type="text/css">  
+    </head>
+      <body>
+      </body>
+    </html>
+</body>
+</html>
+
 <?php
 
 $start_date = new DateTime($_SESSION['from']);
@@ -57,19 +74,31 @@ $start_date = new DateTime($_SESSION['from']);
         }
 
         public function display() {
-            echo "<div class=\"wrapper margin border\">";
-            echo "<div class=\"inner\">";
-            echo "</div>";
-            echo "<h1 class=\"name\"> $this->name </h1>";
-            echo "<h4 class=\"description\"> $this->description </h4>";
-            echo "<h2 class=\"price\"> R$this->price</h2>";
+
+            echo "<div class=\"wrapper margin border\">";  
             
+            /*inside div*/
+            echo "<div class=\"in\">"; 
+            
+            echo "<h1 class=\"heading\"> $this->name </h1>";
+            /*Star rating*/
+            echo "<p class=\"rating-txt\"><b><i>Hotel rating:</i></b> </p>";
             for ($n = 0; $n < $this->stars; ++$n) {
-                echo "<img class=\"stars\" src=\"images/star.png\">";
+                echo "<img class=\"stars\" src=\"images/star2.png\"> ";
             };
+            /*total cost*/
+            echo "<hr/>";
+            echo "<h2 class=\"cost\">Total Cost:</h2>";
+            echo "<h2 class=\"price\"> R$this->price</h2>";
+            echo "<hr/>";
+
+            /*amenities*/
             foreach ($this->amenity as $array_pic => $array_pic_a) {
                 foreach ($array_pic_a as $pic_key => $pic_value) {
-                echo "<img class=\"amenities margin\" src=\"images/icons/$pic_value.png\">";
+                    echo "<div class=\"amen\">";  
+                    echo "<img class=\"amenities margin\" src=\"images/icons/$pic_value.png\">";
+                    echo "</div>";
+                
                 }
             
             }   
@@ -81,26 +110,23 @@ $start_date = new DateTime($_SESSION['from']);
 
             };
             echo "<form action=\"booking_page.php\" method=\"post\">";
-            echo "<button type=\"submit\" name=\"hotel_id\" value=\"$this->id_name\" id=\"view_more\">Book</button>";
+            echo "<button type=\"submit\" name=\"hotel_id\" value=\"$this->id_name\" id=\"view_more\"><span>Book</span></button>";
             echo "</form>";
-
-           
-            // echo "<a href=\"booking_page.php\"><button> Book </button></a>";
             echo "</div>";
-                
+            
+            /*Description under image*/
+            echo "<div class=\"vl\">";
+            echo "</div>";
+            echo "<div class=\"des\">";
+            echo "<div class=\"type\">"; 
+            echo "<p class=\"description\"> $this->description</p>";
+            echo "</div>";
+            echo "</div>";
+            /*Image*/
+            echo "<img class=\"image\" src=\"$this->img\">";
+            echo "</div>";    
         }
 
     }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class</title>
-    <link rel="stylesheet" href="css/styles_hotel.css" type="text/css">
-</head>
-<body>    
-</body>
-</html>
