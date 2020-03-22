@@ -4,8 +4,8 @@ input[type=text], select, textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   resize: vertical;
   display:flex;
   font-family: 'Roboto', sans-serif;    
@@ -23,13 +23,16 @@ input[type=submit]:hover {
    height:80vh;
    padding: 20px 20px 20px 20px;
    border-radius: 5px;
-   background:rgb(19, 18, 18, 0.5);
+   background:rgba(46, 45, 45, 0.5);
    position: fixed;
+   font-size:18px;
+   font-family: 'Lora', serif;
 }
 
 body{
    padding:0;
    margin:0;
+   font-family: 'Lora', serif;
 }
 
 input[type=date], select{
@@ -40,25 +43,64 @@ input[type=date], select{
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   resize: vertical;
   display:flex;
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Lora', serif;
   
 }
 
 label{
-   color:white;
+   color:rgb(236, 230, 230);
+   padding-top:20px;
+}
+.btn{  
+  background:linear-gradient(to left, rgb(89, 152, 211),rgb(87, 55, 87));
+  width:100%;
+  height:40px;
+  border-radius: 4px;
+  margin:auto;
+  cursor: pointer;
+  outline:none;
+  border:none;
+  transition: all 0.5s;
+  color:rgb(240, 229, 229);
+  font-size:18px;
+  font-family: 'Lora', serif;
+
+}
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
 }
 
-button{
-   font-size:16px;
-   width:100%;
-   padding:10px;
-   border-radius: 4px;
-   outline:none;
-   border-style: none;
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.btn:hover{
+  background:linear-gradient(to left, rgb(95, 62, 95),rgb(112, 159, 187));
+}
+
+.btn:active{
+  transform: translateY(4px);
+
 }
 
 .myVideo {

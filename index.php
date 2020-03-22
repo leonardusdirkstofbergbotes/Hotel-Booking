@@ -16,12 +16,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Monkey</title>
+    <!--google font link-->
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+    <!--Css stylesheet-->
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 <body>
-    
+    <!--VIDEO-->
     <video autoplay muted loop class="myVideo">
-        <source src="video2.mp4" type="video/mp4">
+        <source src="Landing.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
       </video>
         
@@ -43,7 +46,7 @@
           <label for="Out">Book out date</label>
           <input type="date" id="dateout" name="out" required>
     
-          <button type="submit" name="lets_start">Submit</button>
+          <button class="btn" type="submit" name="lets_start"><span>Submit</span></button>
         </form>
 
     </div>
