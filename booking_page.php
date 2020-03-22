@@ -7,66 +7,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confirm details</title>
+    <title>Hotel Monkey Confirm</title>
     <link rel="stylesheet" href="css/final_page.css">
 </head>
 <body>
 
 <?php include "include/hotel_info.php"; ?>
 
-<div class="wrapper mar_pad">
+<div class="contain mar_pad">
 
+<!--Button Div-->
+<div class="inside">
+    <form class="form_button " action="email_handler.php"> 
+        <button class=" button btn-one"> <span>Confirm & Book</span> </button>
+        <button class="btn-img"><img src="./images/stars.png"></button>
+    </form>
+    <form class="form_button " action="calc.php"> 
+        <button class="button btn-two"> <span>Cancel & Go-back</span>  </button>
+    </form>
+</div>
+
+    <!--info Div -->
     <h1 class="font_larger"> Thank you <?php echo $_SESSION['username'];?>  <?php echo $_SESSION['surname']; ?> </h1>
 
-    <p class="font_large"> You have currently selected to visit the <?php 
+    <p class="info"> Visiting:<?php 
 
             switch ($_POST['hotel_id']) {
             case '1':
+                echo "<b>";
                 echo $hotel1->name;
+                echo "</b>";
                 break;
             case '2':
+                echo "<b>";
                 echo $hotel2->name;
+                echo "</b>";
                 break;
             case '3':
+                echo "<b>";
                 echo $hotel3->name;
+                echo "</b>";
                 break;
             case '4':
+                echo "<b>";
                 echo $hotel4->name;
+                echo "</b>";
                 break;
             } ?> 
         
-        Hotel from </p>
+         </p>
         
-    <p class="font_larger"><strong><?php echo $_SESSION['from'];?></strong> until <strong><?php echo $_SESSION['to']; ?></strong></>
+    <p class="info">Date:<strong><?php echo $_SESSION['from'];?></strong> until <strong><?php echo $_SESSION['to']; ?></strong></>
 
-    <p class="font_large"> A total cost of R<?php 
+    <p class="info"> A total cost of R<?php 
             switch ($_POST['hotel_id']) {
             case '1':
-                echo $hotel1->price;
+                echo "<b>";
+                echo $hotel1->total_cost;
+                echo "</b>";
                 break;
             case '2':
-                echo $hotel2->price;
+                echo "<b>";
+                echo $hotel2->total_cost;
+                echo "</b>";
                 break;
             case '3':
-                echo $hotel3->price;
+                echo "<b>";
+                echo $hotel3->total_cost;
+                echo "</b>";
                 break;
             case '4':
-                echo $hotel4->price;
+                echo "<b>";
+                echo $hotel4->total_cost;
+                echo "</b>";
                 break;
             } ?> 
         is required to make the booking. </p>
 
-        <p class="font_large"> If this information is correct you can go ahead and click the Book button and an email will be sent to <?php echo $_SESSION['email'] ?> </p>
+        <p class="info"> If this information is correct you can go ahead and click the Book button and an email will be sent to <?php echo $_SESSION['email'] ?> </p>
 
 
 
-    <form class="form_button" action="email_handler.php"> 
-        <button class="mar_pad_small"> Confirm & Book </button>
-    </form>
-
-    <form class="form_button" action="calc.php"> 
-        <button class="mar_pad_small"> Cancel & Go-back  </button>
-    </form>
+   
 
 </div>
 
