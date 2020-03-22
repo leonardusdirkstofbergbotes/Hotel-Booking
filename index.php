@@ -14,7 +14,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Hotel Monkey</title>
     <!--google font link-->
     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
@@ -25,10 +25,11 @@
 <body>
     <!--VIDEO-->
     <video autoplay muted loop class="myVideo">
-        <source src="Landing.mp4" type="video/mp4">
+        <source src="Landing.mp4" type="video/mp4"  >
         Your browser does not support HTML5 video.
       </video>
         
+        <!--FORM-->
     <div class="container">
 
         <form method="post">
@@ -52,7 +53,7 @@
 
     </div>
     
-    <script>
+<script>
     datein.min = new Date().toISOString().split("T")[0];
     dateout.min = new Date().toISOString().split("T")[0];
     

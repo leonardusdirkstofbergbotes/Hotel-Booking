@@ -1,18 +1,18 @@
- 
-    <!doctype html>
-    <html lang="en">
-      <head>
-        <title>Class</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles_hotel.css" type="text/css">  
-    </head>
-      <body>
-      </body>
-    </html>
-</body>
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <title>Class</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!--css stylesheet-->
+    <link rel="stylesheet" href="css/styles_hotel.css" type="text/css">  
+</head>
+<body></body>
 </html>
 
 <?php
@@ -90,9 +90,11 @@ $start_date = new DateTime($_SESSION['from']);
             };
             /*total cost*/
             echo "<hr/>";
-            echo "<h2 class=\"cost\">Total Cost:</h2>";
+            echo "<h2 class=\"cost\">Daily rate:</h2>";
             echo "<h2 class=\"price\"> R$this->price</h2>";
-            echo $this->total_cost;
+            echo "<br/>";
+            echo "<h2 class=\"cost\">Total Cost:</h2>";
+            echo "<h2 class=\"price\">R$this->total_cost</h2>";
             echo "<hr/>";
 
             /*amenities*/
