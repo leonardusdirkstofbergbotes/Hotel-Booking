@@ -47,7 +47,7 @@
         
          </p>
         
-    <p class="info">Date: <strong><?php echo $_SESSION['from'];?></strong> until <strong><?php echo $_SESSION['to']; ?></strong></>
+    <p class="info">Date: <strong><?php echo $_SESSION['from'];?></strong> until <strong><?php echo $_SESSION['to'];?> (<?php echo $GLOBALS["diff"]; ?>) days</strong></p>
 
     <p class="info"> A total cost of R<?php 
             switch ($_POST['hotel_id']) {
