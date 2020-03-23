@@ -36,9 +36,9 @@ We tried to use as less as possible code with some great results.  Kept the prog
 This is our first attempt at Object Orientated Programming
 
 ## Author
-***Leonardus Botes ***
-***Abigail Liguma ***
-***Chelsea Mutizira***
+* Leonardus Botes
+* Abigail Liguma 
+* Chelsea Mutizira
 
 ## License
 TBC

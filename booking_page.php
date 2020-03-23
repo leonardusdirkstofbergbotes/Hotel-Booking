@@ -6,9 +6,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Hotel Monkey Confirm</title>
     <link rel="stylesheet" href="css/final_page.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Lora|Noto+Sans+JP|PT+Sans|Playfair+Display&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -16,21 +17,10 @@
 
 <div class="contain mar_pad">
 
-<!--Button Div-->
-<div class="inside">
-    <form class="form_button " action="email_handler.php"> 
-        <button class=" button btn-one"> <span>Confirm & Book</span> </button>
-        <button class="btn-img"><img src="./images/stars.png"></button>
-    </form>
-    <form class="form_button " action="calc.php"> 
-        <button class="button btn-two"> <span>Cancel & Go-back</span>  </button>
-    </form>
-</div>
-
     <!--info Div -->
     <h1 class="font_larger"> Thank you <?php echo $_SESSION['username'];?>  <?php echo $_SESSION['surname']; ?> </h1>
-
-    <p class="info"> Visiting:<?php 
+ 
+    <p class="info"> Visiting: <?php 
 
             switch ($_POST['hotel_id']) {
             case '1':
@@ -57,7 +47,7 @@
         
          </p>
         
-    <p class="info">Date:<strong><?php echo $_SESSION['from'];?></strong> until <strong><?php echo $_SESSION['to']; ?></strong></>
+    <p class="info">Date: <strong><?php echo $_SESSION['from'];?></strong> until <strong><?php echo $_SESSION['to'];?> (<?php echo $GLOBALS["diff"]; ?>) days</strong></p>
 
     <p class="info"> A total cost of R<?php 
             switch ($_POST['hotel_id']) {
@@ -84,9 +74,15 @@
             } ?> 
         is required to make the booking. </p>
 
-        <p class="info"> If this information is correct you can go ahead and click the Book button and an email will be sent to <?php echo $_SESSION['email'] ?> </p>
-
-
+        <p class="info"> If this information is correct you can go ahead and click the<br/> Book button and an email will be sent to <?php echo $_SESSION['email'] ?> </p>
+            
+            <!--Buttons-->
+    <form action="email_handler.php"> 
+        <button class=" button btn"> <span>Confirm & Book</span> </button>
+    </form>
+    <form action="calc.php"> 
+        <button class="button btn"> <span>Cancel & Go-back</span>  </button>
+    </form>
 
    
 

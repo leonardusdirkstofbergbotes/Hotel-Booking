@@ -14,21 +14,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Hotel Monkey</title>
     <!--google font link-->
     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--Css stylesheet-->
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 <body>
     <!--VIDEO-->
     <video autoplay muted loop class="myVideo">
-        <source src="Landing.mp4" type="video/mp4">
+        <source src="Landing.mp4" type="video/mp4"  >
         Your browser does not support HTML5 video.
       </video>
         
+        <!--FORM-->
     <div class="container">
 
         <form method="post">
@@ -46,16 +46,27 @@
 
           <label for="Out">Book out date</label>
           <input type="date" id="dateout" name="out" required>
-    
-          <button class="btn" type="submit" name="lets_start"><span>Submit</span></button>
+          <!-- <button onclick="check()"> check </button> -->
+          <button class="btn" type="submit" name="lets_start" onclick="check()"><span>Submit</span></button>
         </form>
 
     </div>
     
-    <script>
+<script>
     datein.min = new Date().toISOString().split("T")[0];
     dateout.min = new Date().toISOString().split("T")[0];
+
+    function check() {
+    var x = new Date(document.getElementById("datein").value);
+    var y = new Date(document.getElementById("dateout").value);
     
+   var days =  Math.floor((y - x) /(1000*60*60*24));
+   if (days == 0) {
+    alert("you must select more than 0 days");
+   } 
+    
+}
+
     </script>
 </body>
 </html>

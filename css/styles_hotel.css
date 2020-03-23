@@ -3,7 +3,7 @@ body{
   color:rgb(32, 32, 32);
   background-size: cover;
 }
-
+/***Main Div's***/
 .wrapper{
   background:rgba(151, 163, 187,0.5);
   width:100%;
@@ -12,22 +12,56 @@ body{
   margin-top:20px;
   display:flex;
   font-family: 'Lora', serif;
-  
 }
 
+.in{
+  border-radius: 10px;
+  margin:10px;
+  width:30%;
+  background:transparent;
+  height:90%;
+  /*display:inline-block;*/
+  float:left;
+  /*border:3px solid rgba(41, 40, 40, 0.9);*/
+  text-align:center;
+}
+
+/*Heading*/
+.heading{
+  text-align:center;
+  margin:0;
+  padding-top:10px;
+}
+
+/*Ratings*/
+.stars{
+  height:15px;
+  width:15px;
+}
+
+.rating-txt{
+  display:inline-flex;
+  margin-right:10px;
+}
+
+/*prices*/
+.price{
+  display: inline;
+  font-size:18px;
+}
+
+.cost{
+  display: inline;
+  font-size:18px;
+  margin-right:10px;
+}
+
+/*Amenities*/
 .amenities{
   height:25px;
   width:25px;
   display:inline-flex;
   justify-content: center;
-}
-
-.par:first-letter{
-  float: left;
-  font-size: 45px;
-  line-height: 1;
-  font-weight: bold;
-  margin-right: 9px;
 }
 
 .amen{
@@ -42,79 +76,15 @@ body{
   margin-bottom:10px;
   margin-top:20px;
 }
-
-.in{
-  border-radius: 10px;
-  margin:10px;
-  width:30%;
-  background:transparent;
-  height:90%;
-  /*display:inline-block;*/
-  float:left;
-  /*border:3px solid rgba(41, 40, 40, 0.9);*/
-  text-align:center;
-}
-.des{
-  float:left;
-  width:30%;
-  height:40vh;
-  margin-left:20px;
-  margin-right:20px;
-
+.par:first-letter{
+  float: left;
+  font-size: 45px;
+  line-height: 1;
+  font-weight: bold;
+  margin-right: 9px;
 }
 
-.vl{
-    border-left: 1px solid rgb(242, 245, 242);
-    height:20vh;
-    float: left;
-    margin-right:10px;
-    margin-left: 20px;
-    width:10px;
-    margin-top: 7%;
-    margin-bottom:7%;
-  
-}
-.image{
-  border-radius: 10px;
-  margin-top:20px;
-  display:inline-block;
-  height:40vh;
-  width:30%;
-  margin-left:50px;
-  margin-right:20px;
-}
-
-.heading{
-  text-align:center;
-  margin:0;
-  padding-top:10px;
-}
-.cost{
-  display: inline;
-  font-size:18px;
-  margin-right:10px;
-}
-
-hr{
-  width:50%;
-  display: block; height: 1px;
-  border: 0; border-top: 1px solid rgb(226, 221, 221);
-}
-.price{
-  display: inline;
-  font-size:18px;
-}
-
-.rating-txt{
-  display:inline-flex;
-  margin-right:10px;
-
-}
-
-#title{
-  color:rgb(240, 234, 234);
-}
-
+/***Button***/
 #view_more{  
   background:linear-gradient(to left, rgb(89, 152, 211),rgb(87, 55, 87));
   width:70%;
@@ -166,14 +136,46 @@ button{
   font-size:18px;
 }
 
-
-.stars{
-  height:15px;
-  width:15px;
- 
+.vl{
+  border-left: 1px solid rgb(242, 245, 242);
+  height:20vh;
+  float: left;
+  margin-right:10px;
+  margin-left: 20px;
+  width:10px;
+  margin-top: 7%;
+  margin-bottom:7%;
 }
 
-/***********LEFT SECTION**************/
+/*description*/
+.des{
+  float:left;
+  width:30%;
+  height:40vh;
+  margin-left:20px;
+  margin-right:20px;
+}
+
+.image{
+  border-radius: 10px;
+  margin-top:20px;
+  display:inline-block;
+  height:40vh;
+  width:30%;
+  margin-left:50px;
+  margin-right:20px;
+}
+
+hr{
+  width:50%;
+  display: block; height: 1px;
+  border: 0; border-top: 1px solid rgb(226, 221, 221);
+}
+
+#title{
+  color:rgb(240, 234, 234);
+}
+
 
 
   
