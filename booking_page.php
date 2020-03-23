@@ -20,7 +20,7 @@
     <!--info Div -->
     <h1 class="font_larger"> Thank you <?php echo $_SESSION['username'];?>  <?php echo $_SESSION['surname']; ?> </h1>
  
-    <p class="info"> Visiting:<?php 
+    <p class="info"> Visiting: <?php 
 
             switch ($_POST['hotel_id']) {
             case '1':
@@ -47,7 +47,7 @@
         
          </p>
         
-    <p class="info">Date:<strong><?php echo $_SESSION['from'];?></strong> until <strong><?php echo $_SESSION['to']; ?></strong></>
+    <p class="info">Date: <strong><?php echo $_SESSION['from'];?></strong> until <strong><?php echo $_SESSION['to']; ?></strong></>
 
     <p class="info"> A total cost of R<?php 
             switch ($_POST['hotel_id']) {
