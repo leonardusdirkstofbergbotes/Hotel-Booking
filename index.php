@@ -18,7 +18,6 @@
     <title>Hotel Monkey</title>
     <!--google font link-->
     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--Css stylesheet-->
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
