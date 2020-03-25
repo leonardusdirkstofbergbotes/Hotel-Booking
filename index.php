@@ -20,6 +20,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
     <!--Css stylesheet-->
     <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
     <!--VIDEO-->
@@ -31,7 +32,7 @@
         <!--FORM-->
     <div class="container">
 
-        <form method="post">
+        <form id="myform">
             <label for="fname">First Name</label>
             <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
       
@@ -47,7 +48,7 @@
           <label for="Out">Book out date</label>
           <input type="date" id="dateout" name="out" required>
           <!-- <button onclick="check()"> check </button> -->
-          <button class="btn" type="submit" name="lets_start" onclick="check()"><span>Submit</span></button>
+          <button class="btn" id="buton" name="lets_start" onclick="check()"><span>Submit</span></button>
         </form>
 
     </div>
@@ -56,15 +57,19 @@
     datein.min = new Date().toISOString().split("T")[0];
     dateout.min = new Date().toISOString().split("T")[0];
 
-    function check() {
-    var x = new Date(document.getElementById("datein").value);
-    var y = new Date(document.getElementById("dateout").value);
     
-   var days =  Math.floor((y - x) /(1000*60*60*24));
+
+    function check() {
+        var x = new Date(document.getElementById("datein").value);
+        var y = new Date(document.getElementById("dateout").value);
+        var days =  Math.floor((y - x) /(1000*60*60*24));
+    
    if (days == 0) {
     alert("you must select more than 0 days");
    } 
-    
+   else if (days > 0) {
+    document.getElementById("myform").method = "post";
+   }
 }
 
     </script>
