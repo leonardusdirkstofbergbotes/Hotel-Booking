@@ -8,7 +8,7 @@
         $_SESSION['email'] = $_POST['email'];
         header("Location: calc.php");
     }
-?>
+?>s,dv dv dv d
 
 <!DOCTYPE html>
 <html lang="en">
