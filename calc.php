@@ -16,6 +16,7 @@
 
     require "include/hotel_info.php";
 
+    //display() function will echo all the info of the different hotels
         $hotel1->display(); 
         $hotel2->display(); 
         $hotel3->display(); 

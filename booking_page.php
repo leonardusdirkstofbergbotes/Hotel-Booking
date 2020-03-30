@@ -15,13 +15,14 @@
 
 <?php include "include/hotel_info.php"; ?>
 
-<div class="contain mar_pad">
+    <div class="contain mar_pad">
 
-    <!--info Div -->
-    <h1 class="font_larger"> Thank you <?php echo $_SESSION['username'];?>  <?php echo $_SESSION['surname']; ?> </h1>
- 
-    <p class="info"> Visiting: <?php 
+        <!--info Div -->
+        <h1 class="font_larger"> Thank you <?php echo $_SESSION['username'];?>  <?php echo $_SESSION['surname']; ?> </h1>
+    
+        <p class="info"> Visiting: <?php 
 
+        //depending on which hotel the user selected
             switch ($_POST['hotel_id']) {
             case '1':
                 echo "<b>";
@@ -44,12 +45,14 @@
                 echo "</b>";
                 break;
             } ?> 
-        
-         </p>
-        
-    <p class="info">Date: <strong><?php echo $_SESSION['from'];?></strong> until <strong><?php echo $_SESSION['to'];?> (<?php echo $GLOBALS["diff"]; ?>) days</strong></p>
+            
+            </p>
+            
+        <p class="info">Date: <strong><?php echo $_SESSION['from'];?></strong> until <strong><?php echo $_SESSION['to'];?> (<?php echo $GLOBALS["diff"]; ?>) days</strong></p>
 
-    <p class="info"> A total cost of R<?php 
+        <p class="info"> A total cost of R<?php 
+
+        //depending on which hotel the user selected
             switch ($_POST['hotel_id']) {
             case '1':
                 echo "<b>";
@@ -72,23 +75,21 @@
                 echo "</b>";
                 break;
             } ?> 
-        is required to make the booking. </p>
+            is required to make the booking. </p>
 
-        <p class="info"> If this information is correct you can go ahead and click the<br/> Book button and an email will be sent to <?php echo $_SESSION['email'] ?> </p>
-            
-            <!--Buttons-->
-    <form action="email_handler.php"> 
-        <button class=" button btn"> <span>Confirm & Book</span> </button>
-    </form>
-    <form action="calc.php"> 
-        <button class="button btn"> <span>Cancel & Go-back</span>  </button>
-    </form>
+            <p class="info"> If this information is correct you can go ahead and click the<br/> Book button and an email will be sent to <?php echo $_SESSION['email'] ?> </p>
+                
+                <!--Buttons-->
+        <form action="email_handler.php"> 
+        <!--send email-->
+            <button class=" button btn"> <span>Confirm & Book</span> </button> 
+        </form>
+        
+        <form action="calc.php"> 
+            <button class="button btn"> <span>Cancel & Go-back</span>  </button>
+        </form>
 
-   
-
-</div>
-
-
-    
+    </div>
+  
 </body>
 </html>

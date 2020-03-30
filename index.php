@@ -14,7 +14,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Hotel Monkey</title>
     <!--google font link-->
     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
@@ -25,9 +25,9 @@
 <body>
     <!--VIDEO-->
     <video autoplay muted loop class="myVideo">
-        <source src="Landing.mp4" type="video/mp4"  >
+        <source src="vid/Landing.mp4" type="video/mp4"  >
         Your browser does not support HTML5 video.
-      </video>
+    </video>
         
         <!--FORM-->
     <div class="container">
@@ -54,23 +54,22 @@
     </div>
     
 <script>
+
     datein.min = new Date().toISOString().split("T")[0];
     dateout.min = new Date().toISOString().split("T")[0];
-
-    
 
     function check() {
         var x = new Date(document.getElementById("datein").value);
         var y = new Date(document.getElementById("dateout").value);
         var days =  Math.floor((y - x) /(1000*60*60*24));
     
-   if (days == 0) {
-    alert("you must select more than 0 days");
-   } 
-   else if (days > 0) {
-    document.getElementById("myform").method = "post";
-   }
-}
+        if (days == 0) {
+            alert("you must select more than 0 days");
+        } 
+        else if (days > 0) {
+            document.getElementById("myform").method = "post";
+        }
+    }
 
     </script>
 </body>
