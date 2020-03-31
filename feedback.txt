@@ -2,4 +2,3 @@ fix spelling mistakes
 create a tooltip for the amenities
 the booking page should have a fun image
 Maybe have a still image on the mobile
-include a icon on the title bar
