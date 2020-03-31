@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>Hotel Monkey</title>
+    <link rel="icon" type="image/gif/png" href="./images/monkey.png">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,8 +23,8 @@
             $hotel1->description('<h1 id="title"><marquee behavior="slide" scrollamount="20" onmousedown="this.stop();" ">The Biltmore</marquee></h1>
                 <p class="par">The Biltmore hotel is located in the centre of Cape Town.
                 You have access to all the bars, restaurants and vibrate buzz roaming around in the atmosphere.
-                Its the perfect spot to get your mood sky high.The Biltmore hotel wants their guests to feel
-                accustomed to the modern tradition of the spot.The spooky setting and history will be sure to send chills
+                Its the perfect spot to get your mood sky high. The Biltmore hotel wants its guests to feel
+                accustomed to the modern tradition of the spot. The spooky setting and history will be sure to send chills
                 down your spine.  </p>');
             $hotel1->img("./images/biltmore.jpg");
             $hotel1->amen(['wifi', 'bar', 'no pets allowed', 'play area', 'free tour included']);
@@ -35,10 +36,10 @@
             $hotel2->stars(5);
             $hotel2->rate(3000);
             $hotel2->description('<h1 id="title"><marquee behavior="slide" scrollamount="20" onmousedown="this.stop();" ">Bikini Bottom</marquee></h1>
-                <p class="par">Bikini Bottom got its name from the mere fact that most rooms are located unerwater.
-                From luxurious suites and comfortable living, your staying couldnt get any better.
-                Its location is far from the suburbs and is perfect for a luxury accommodation with an amazing ocean front
-                view.It brings a variety of services at your comfort making you feel far from home in all ways.All
+                <p class="par">Bikini Bottom got its name from the mere fact that most rooms are located underwater.
+                From luxurious suites and comfortable living, your stay could not  get any better.
+                Its location is far from the suburbs and is perfect for luxury accommodation with an amazing oceanfront
+                view. It brings a variety of services at your comfort making you feel far from home in all ways. All
                 your desires for some alone excursion time is brought to you by Bikini Bottom. </p>');
             $hotel2->img("./images/bikini.jpg");
             $hotel2->amen(['wifi', 'bar', 'pets allowed', 'farm','pool', 'jacuzzi']);
@@ -64,7 +65,7 @@
             $hotel4->stars(3);
             $hotel4->rate(700);
             $hotel4->description('<h1 id="title"><marquee behavior="slide" scrollamount="20" onmousedown="this.stop();" ">Dare Devil</marquee></h1>
-                <p class="par">Daredevil hotel is situated at the top of the devils peak .
+                <p class="par">Daredevil hotel is situated at the top of the Devil\'s Peak.
                 The weather is super cool at night and warm in the mornings as it instantly sets the mood for the day.
                 Serene views that you can use to your advantage for those dazzling images including
                 a glass ceiling pool house that will set the house in a monumental island experience.
