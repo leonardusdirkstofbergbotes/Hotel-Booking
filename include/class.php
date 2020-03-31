@@ -11,7 +11,7 @@
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <!--css stylesheet-->
-    <link rel="stylesheet" href="css/styles_hotel.css" type="text/css">  
+    <link rel="stylesheet" href="css/styles_hotel.css" type="text/css"> 
 </head>
 <body></body>
 </html>
