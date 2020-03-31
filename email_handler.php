@@ -1,5 +1,4 @@
-<?php
-
+<?php 
     session_start();
 // Import PHPMailer classes into the global namespace
 // These must be at the top of your script, not inside a function
@@ -38,7 +37,6 @@ try {
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send(); //If it is successful
-    echo 'Message has been sent';
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }

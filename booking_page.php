@@ -10,6 +10,8 @@
     <title>Hotel Monkey Confirm</title>
     <link rel="stylesheet" href="css/final_page.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Lora|Noto+Sans+JP|PT+Sans|Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
 
@@ -80,16 +82,31 @@
             <p class="info"> If this information is correct you can go ahead and click the<br/> Book button and an email will be sent to <?php echo $_SESSION['email'] ?> </p>
                 
                 <!--Buttons-->
-        <form action="email_handler.php"> 
-        <!--send email-->
-            <button class=" button btn"> <span>Confirm & Book</span> </button> 
-        </form>
+                <button class="btn button" onclick="myAjax()">Book</button>
+            
         
         <form action="calc.php"> 
             <button class="button btn"> <span>Cancel & Go-back</span>  </button>
         </form>
 
     </div>
+
+    
+    <script>
+function myAjax() {
+$.ajax( { type : 'POST',
+          data : { },
+          url  : './email_handler.php',              // <=== CALL THE PHP FUNCTION HERE.
+          success: function ( data ) {
+            swal("Thank You!", "A email was sent for confirmation!", "success");;               // <=== VALUE RETURNED FROM FUNCTION.
+          },
+          error: function ( xhr ) {
+            alert( "error" );
+          }
+        });
+}
+
+    </script>
   
 </body>
 </html>
