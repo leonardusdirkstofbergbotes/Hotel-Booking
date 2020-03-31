@@ -1,4 +1,4 @@
-create a tooltip for the amenities
+
 Maybe have a still image on the mobile
-include an icon on the title bar
+
 Media queries 
