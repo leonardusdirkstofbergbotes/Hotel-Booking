@@ -1,5 +1,8 @@
 body{
   font-family: 'Lora', serif;
+  background: url("../images/10.jpg");
+  color:rgb(32, 32, 32);
+  background-size: cover;
 }
 
 .contain {

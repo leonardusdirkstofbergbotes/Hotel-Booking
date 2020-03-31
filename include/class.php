@@ -1,21 +1,3 @@
-<!doctype html>
-
-<html lang="en">
-
-<head>
-    <title>Hotel Monkey</title>
-    <link rel="icon" type="image/gif/png" href="./images/monkey.png">
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <!--css stylesheet-->
-    <link rel="stylesheet" href="css/styles_hotel.css" type="text/css"> 
-</head>
-<body></body>
-</html>
-
 <?php
 
     $start_date = new DateTime($_SESSION['from']);

@@ -1,16 +1,3 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>Hotel Monkey</title>
-    <link rel="icon" type="image/gif/png" href="./images/monkey.png">
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Lora|Noto+Sans+JP|PT+Sans|Playfair+Display&display=swap" rel="stylesheet">
-  </head>
-  <body>
-  </body>
-</html>
 <?php
 
     require "include/class.php";
