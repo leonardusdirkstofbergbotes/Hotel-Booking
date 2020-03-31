@@ -1,4 +1,3 @@
-
-Maybe have a still image on the mobile
-
-Media queries 
+media queries 2nd page 
+media queries last page 
+media queries email sent message
