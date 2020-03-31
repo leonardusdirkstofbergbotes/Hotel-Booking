@@ -20,6 +20,8 @@
 
     <div class="contain mar_pad">
 
+    <div id="loader"> <img src="load.gif"> </div>
+
         <!--info Div -->
         <h1 class="font_larger"> Thank you <?php echo $_SESSION['username'];?>  <?php echo $_SESSION['surname']; ?> </h1>
     
@@ -107,6 +109,16 @@
 
     
     <script>
+    
+$(document).ready(function () {
+    $('#loader').hide();
+    $(document).ajaxStart(function () {
+        $("#loader").show();
+    }).ajaxStop(function () {
+        $("#loader").hide();
+    });
+});
+
 function myAjax() {
 $.ajax( { type : 'POST',
           data : { },
