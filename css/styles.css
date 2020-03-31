@@ -138,11 +138,16 @@ label{
   .btn{
     width:50%;
   }
+  body{
+    background-image:url("../images/10.jpg");
+    background-size: cover;
+    
+  }
 }
 
 @media screen and (max-width:768px){
   input[type=text], select, textarea {
-    padding:5px;
+    padding:10px;
   }
   input[type=date], select{
     padding:5px;
@@ -152,6 +157,9 @@ label{
   }
   form{
     margin-top:30px;
+  }
+  video{
+    visibility: hidden;
   }
 }
 
