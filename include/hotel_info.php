@@ -1,16 +1,3 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>Hotel Monkey</title>
-    <link rel="icon" type="image/gif/png" href="./images/monkey.png">
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Lora|Noto+Sans+JP|PT+Sans|Playfair+Display&display=swap" rel="stylesheet">
-  </head>
-  <body>
-  </body>
-</html>
 <?php
 
     require "include/class.php";
@@ -27,7 +14,7 @@
                 accustomed to the modern tradition of the spot. The spooky setting and history will be sure to send chills
                 down your spine.  </p>');
             $hotel1->img("./images/biltmore.jpg");
-            $hotel1->amen(['wifi', 'bar', 'no_pets', 'play', 'tour']);
+            $hotel1->amen(['wifi', 'bar', 'no pets allowed', 'play area', 'free tour included']);
 
 
         $hotel2 = new Hotel;
@@ -42,7 +29,7 @@
                 view. It brings a variety of services at your comfort making you feel far from home in all ways. All
                 your desires for some alone excursion time is brought to you by Bikini Bottom. </p>');
             $hotel2->img("./images/bikini.jpg");
-            $hotel2->amen(['wifi', 'bar', 'pets', 'farm','pool', 'jacuzzi']);
+            $hotel2->amen(['wifi', 'bar', 'pets allowed', 'farm','pool', 'jacuzzi']);
 
 
         $hotel3 = new Hotel;
@@ -56,7 +43,7 @@
                 If you are looking for a comfortable place to escape the world in the wild we are perfectly suited for
                 your needs</p>');
             $hotel3->img("./images/queens.png");
-            $hotel3->amen(['wifi', 'bar', 'no_pets','play', 'tour']);
+            $hotel3->amen(['wifi', 'bar', 'play area','no pets allowed', 'free tour included']);
 
 
         $hotel4 = new Hotel;
@@ -71,6 +58,6 @@
                 a glass ceiling pool house that will set the house in a monumental island experience.
                 comfortable stay.</p>');
             $hotel4->img("./images/devil.jpg");
-            $hotel4->amen(['no_wifi', 'pets', 'jacuzzi', 'planet','gym']);
+            $hotel4->amen(['limited wifi access', 'pets allowed', 'jacuzzi', 'planetarium on site','gym facilites available']);
 
 ?>
