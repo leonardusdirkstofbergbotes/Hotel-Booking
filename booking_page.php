@@ -60,21 +60,34 @@
                 echo "<b>";
                 echo $hotel1->total_cost;
                 echo "</b>";
+                echo " at R";
+                echo "<b>" .$hotel1->price . "</b>";
+                echo " per day";
+                
                 break;
             case '2':
                 echo "<b>";
                 echo $hotel2->total_cost;
                 echo "</b>";
+                echo " at R";
+                echo "<b>" .$hotel2->price . "</b>";
+                echo " per day";
                 break;
             case '3':
                 echo "<b>";
-                echo $hotel3->total_cost;
+                echo $hote3->total_cost;
                 echo "</b>";
+                echo " at R";
+                echo "<b>" .$hotel3->price . "</b>";
+                echo " per day";
                 break;
             case '4':
                 echo "<b>";
-                echo $hotel4->total_cost;
+                echo $hote4->total_cost;
                 echo "</b>";
+                echo " at R";
+                echo "<b>" .$hotel4->price . "</b>";
+                echo " per day";
                 break;
             } ?> 
             is required to make the booking. </p>

@@ -1,4 +1,4 @@
-include DAILY RATE in booking
+
 get the order of the icons right
 fix spelling mistakes
 create a tooltip for the amenities
