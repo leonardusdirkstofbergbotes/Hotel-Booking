@@ -16,6 +16,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Hotel Monkey</title>
+    <link rel="icon" type="image/gif/png" href="./images/monkey.png">
     <!--google font link-->
     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
     <!--Css stylesheet-->
