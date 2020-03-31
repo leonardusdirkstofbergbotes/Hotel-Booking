@@ -26,7 +26,7 @@
                 accustomed to the modern tradition of the spot.The spooky setting and history will be sure to send chills
                 down your spine.  </p>');
             $hotel1->img("./images/biltmore.jpg");
-            $hotel1->amen(['wifi', 'play', 'bar','no_pets', 'tour']);
+            $hotel1->amen(['wifi', 'bar', 'no_pets', 'play', 'tour']);
 
 
         $hotel2 = new Hotel;
@@ -41,7 +41,7 @@
                 view.It brings a variety of services at your comfort making you feel far from home in all ways.All
                 your desires for some alone excursion time is brought to you by Bikini Bottom. </p>');
             $hotel2->img("./images/bikini.jpg");
-            $hotel2->amen(['bar','farm','pool', 'pets','wifi', 'jacuzzi']);
+            $hotel2->amen(['wifi', 'bar', 'pets', 'farm','pool', 'jacuzzi']);
 
 
         $hotel3 = new Hotel;
@@ -55,7 +55,7 @@
                 If you are looking for a comfortable place to escape the world in the wild we are perfectly suited for
                 your needs</p>');
             $hotel3->img("./images/queens.png");
-            $hotel3->amen(['bar', 'play','wifi','tour','no_pets']);
+            $hotel3->amen(['wifi', 'bar', 'play','no_pets', 'tour']);
 
 
         $hotel4 = new Hotel;
@@ -70,6 +70,6 @@
                 a glass ceiling pool house that will set the house in a monumental island experience.
                 comfortable stay.</p>');
             $hotel4->img("./images/devil.jpg");
-            $hotel4->amen(['pets','jacuzzi','no_wifi','planet','gym']);
+            $hotel4->amen(['no_wifi', 'pets', 'jacuzzi', 'planet','gym']);
 
 ?>
