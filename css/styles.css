@@ -31,6 +31,19 @@ input[type=text], select, textarea {
   font-family: 'Lora', serif;
 }
 
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  resize: vertical;
+  display:flex;
+  font-family: 'Lora', serif;
+}
+
 input[type=submit]:hover {
   background-color: #9c8a6d;
 }
@@ -117,40 +130,53 @@ label{
 /************************MEDIA QUERIES*****************/
 
 /*Form*/
-@media screen and (max-width:720px){
-  .container{
-    width:100%;
-    margin:0;
-    height:100vh;
-    padding:0;
-    text-align:center;
-  }
+
+@media screen and (max-width:1024px){
   input[type=text], select, textarea {
-    width:80%;
-    margin-left:auto;
-    margin-right:auto;
+    padding:5px;
+    margin-top:5px;
+    font-size:13px;
+  }
+
+  input[type=email], select, textarea {
+    padding:5px;
+    margin-top:5px;
+    font-size:13px;
   }
   input[type=date], select{
-    width:80%;
-    margin-left:auto;
-    margin-right:auto;
+    padding:5px;
+    width:100%;
+    margin-top:5px;
+    font-size:13px;
   }
   .btn{
-    width:50%;
+    height:30px;
   }
-  body{
-    background-image:url("../images/10.jpg");
-    background-size: cover;
-    
+  label{
+    font-size:15px;
+  }
+  form{
+    margin-top:10px;
   }
 }
 
 @media screen and (max-width:768px){
   input[type=text], select, textarea {
-    padding:10px;
+    padding:5px;
+    margin-top:10px;
+    font-size:13px
+  }
+
+  input[type=email], select, textarea {
+    padding:5px;
+    margin-top:10px;
+    font-size:13px
   }
   input[type=date], select{
-    padding:5px;
+    padding:3px;
+    width:100%;
+    margin-top:10px;
+    font-size:13px;
   }
   .btn{
     height:30px;
@@ -161,5 +187,63 @@ label{
   video{
     visibility: hidden;
   }
+  body{
+    background-image:url("../images/3.gif");
+    background-size: cover;
+    height:100vh;
+    width:100%;
+  }
+  label{
+    font-size:16px;
+  }
+  form{
+    margin-top:10px;
+  }
 }
+
+@media screen and (max-width:720px){
+  .container{
+    width:100%;
+    margin:0;
+    height:100vh;
+    padding:0;
+    text-align:center;
+  }
+  
+  input[type=text], select, textarea {
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    padding:10px;
+  }
+
+  input[type=email], select, textarea {
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    padding:10px;
+  }
+  input[type=date], select{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    padding:10px;
+  }
+  .btn{
+    width:50%;
+  }
+  body{
+    background-image:url("../images/7.jpg");
+    background-size: cover;
+    height:100vh;
+    width:100%;
+  }
+  video{
+    visibility: hidden;
+  }
+  form{
+    margin-top:30px;
+  }
+}
+
 

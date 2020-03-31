@@ -41,7 +41,7 @@
            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
           
           <label for="fname">Email Address</label>
-          <input type="text" id="fname" name="email" placeholder="Your Email.." required>
+          <input type="email" id="fname" name="email" placeholder="Your Email.." required>
 
           <label for="In">Book In date</label>
           <input type="date" id="datein" name="in" required>
@@ -49,7 +49,7 @@
           <label for="Out">Book out date</label>
           <input type="date" id="dateout" name="out" required>
           <!-- <button onclick="check()"> check </button> -->
-          <button class="btn" id="buton" name="lets_start" onclick="check()"><span>Submit</span></button>
+          <button class="btn" id="buton" name="lets_start" onclick="check()"><span>View Hotels</span></button>
         </form>
 
     </div>
