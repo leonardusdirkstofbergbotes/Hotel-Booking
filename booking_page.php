@@ -8,6 +8,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Hotel Monkey Confirm</title>
+    <!--icon for the title bar -->
+    <link rel="icon" type="image/png" href="images/icons/hotel.png">
+    <!-- For apple devices -->
+    <link rel="apple-touch-icon" type="image/png" href="images/icons/hotel.png"/>
+
     <link rel="stylesheet" href="css/final_page.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Lora|Noto+Sans+JP|PT+Sans|Playfair+Display&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

@@ -16,6 +16,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Hotel Monkey</title>
+    <!--icon for the title bar -->
+    <link rel="icon" type="image/png" href="images/icons/hotel.png">
+    <!-- For apple devices -->
+    <link rel="apple-touch-icon" type="image/png" href="images/icons/hotel.png"/>
     <!--google font link-->
     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
     <!--Css stylesheet-->

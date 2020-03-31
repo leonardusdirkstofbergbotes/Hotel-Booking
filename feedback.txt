@@ -1,5 +1,3 @@
-
-get the order of the icons right
 fix spelling mistakes
 create a tooltip for the amenities
 the booking page should have a fun image

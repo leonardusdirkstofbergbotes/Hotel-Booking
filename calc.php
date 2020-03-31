@@ -8,6 +8,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compare Hotels</title>
+    <!--icon for the title bar -->
+    <link rel="icon" type="image/png" href="images/icons/hotel.png">
+    <!-- For apple devices -->
+    <link rel="apple-touch-icon" type="image/png" href="images/icons/hotel.png"/>
+
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
