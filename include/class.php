@@ -97,23 +97,18 @@ class Hotel {
         echo "<h2 class=\"price\">R$this->total_cost</h2>";
         echo "<hr/>";
 
-        /*amenities*/
-        foreach ($this->amenity as $array_pic => $array_pic_a) {
-            foreach ($array_pic_a as $pic_key => $pic_value) {
-                echo "<div class=\"amen\">";  
-                echo "<img class=\"amenities margin\" src=\"images/icons/$pic_value.png\">";
-                echo "</div>";
-            
-            }
-        
-        }   
-        foreach($this->amen_describe as $array_des => $array_des_b) {
-            foreach ($array_des_b as $des_key => $des_value) {
-            echo "<h2>$des_value</h2>";
-                
-            }    
+        foreach ($this->amenity as $array_pic => $array_pic_a) : ?>
+                 <?php foreach ($array_pic_a as $pic_key => $pic_value) : ?>
 
-        };
+                    <div class="amen"><img class="amenities margin" title="<?php echo $pic_value; ?>" src="images/icons/<?php echo $pic_value ?>.png"></div>
+                      
+                       
+                  <?php endforeach; ?>
+                <?php endforeach; ?>
+                
+
+        <?php
+        
         echo "<form action=\"booking_page.php\" method=\"post\">";
         echo "<button type=\"submit\" name=\"hotel_id\" value=\"$this->id_name\" id=\"view_more\"><span>Book</span></button>";
         echo "</form>";
