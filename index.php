@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
     <!--Css stylesheet-->
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script></head>
 </head>
 <body>
     <!--VIDEO-->
@@ -56,6 +56,7 @@
     
 <script>
 
+
     datein.min = new Date().toISOString().split("T")[0];
     dateout.min = new Date().toISOString().split("T")[0];
 
@@ -71,6 +72,11 @@
             document.getElementById("myform").method = "post";
         }
     }
+
+    $("#buton").click(function() {
+        console.log('success');
+    $("input").addClass("email");
+});
 
     </script>
 </body>
