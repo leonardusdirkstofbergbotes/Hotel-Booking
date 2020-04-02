@@ -95,7 +95,7 @@
             } ?> 
             is required to make the booking. </p>
 
-            <p class="info"> If this information is correct you can go ahead and click the<br/> Book button and an email will be sent to <?php echo $_SESSION['email'] ?> </p>
+            <p class="info"> If this information is correct you can go ahead and click the<br/> Book button and an email will be sent to <b class="resize"><?php echo $_SESSION['email'] ?></b> </p>
                 
                 <!--Buttons-->
                 <button class="btn button" onclick="myAjax()">Book</button>
