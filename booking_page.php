@@ -23,9 +23,10 @@
     <div id="loader"> <img src="load.gif"> </div>
 
         <!--info Div -->
-        <h1 class="font_larger"> Thank you <?php echo $_SESSION['username'];?>  <?php echo $_SESSION['surname']; ?> </h1>
+        <h1 class="font_larger"> Thank you <br/><?php echo $_SESSION['username'];?>  <?php echo $_SESSION['surname']; ?><br/> </h1>
     
-        <p class="info"> Visiting: <?php 
+        <p class="info">For</p>
+        <p class="info"> Choosing:<br/> <?php 
 
         //depending on which hotel the user selected
             switch ($_POST['hotel_id']) {
@@ -53,7 +54,7 @@
             
             </p>
             
-        <p class="info">Date: <strong><?php echo $_SESSION['from'];?></strong> until <strong><?php echo $_SESSION['to'];?> (<?php echo $GLOBALS["diff"]; ?>) days</strong></p>
+        <p class="info">Book in date: <strong><br/><?php echo $_SESSION['from'];?><br/></strong> until <strong><br/><?php echo $_SESSION['to'];?></strong><br/>Total of<br/> <strong>(<?php echo $GLOBALS["diff"]; ?>) days</strong></p>
 
         <p class="info"> A total cost of R<?php 
 
@@ -63,34 +64,42 @@
                 echo "<b>";
                 echo $hotel1->total_cost;
                 echo "</b>";
-                echo " at R";
+                echo "<br/>";
+                echo " @ R";
                 echo "<b>" .$hotel1->price . "</b>";
                 echo " per day";
+                echo "<br/>";
                 
                 break;
             case '2':
                 echo "<b>";
                 echo $hotel2->total_cost;
                 echo "</b>";
-                echo " at R";
+                echo "<br/>";
+                echo " @ R";
                 echo "<b>" .$hotel2->price . "</b>";
                 echo " per day";
+                echo "<br/>";
                 break;
             case '3':
                 echo "<b>";
                 echo $hote3->total_cost;
                 echo "</b>";
-                echo " at R";
+                echo "<br/>";
+                echo " @ R";
                 echo "<b>" .$hotel3->price . "</b>";
                 echo " per day";
+                echo "<br/>";
                 break;
             case '4':
                 echo "<b>";
                 echo $hote4->total_cost;
                 echo "</b>";
-                echo " at R";
+                echo "<br/>";
+                echo " @ R";
                 echo "<b>" .$hotel4->price . "</b>";
                 echo " per day";
+                echo "<br/>";
                 break;
             } ?> 
             is required to make the booking. </p>
