@@ -7,7 +7,6 @@ body{
 .wrapper{
   background:rgba(151, 163, 187,0.5);
   width:100%;
-  height:46vh;
   border-radius: 20px;
   margin-top:20px;
   display:flex;
