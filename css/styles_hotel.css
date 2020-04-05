@@ -1,5 +1,5 @@
 body{
-  background: url("../images/10.jpg");
+  background: url("../images/1.jpg");
   color:rgb(32, 32, 32);
   background-size: cover;
 }
@@ -7,7 +7,7 @@ body{
 .wrapper{
   background:rgba(151, 163, 187,0.5);
   width:100%;
-  height:46vh;
+  /*height:46vh;*/
   border-radius: 20px;
   margin-top:20px;
   display:flex;
@@ -175,7 +175,95 @@ hr{
 #title{
   color:rgb(240, 234, 234);
 }
+/*************Media Queries*****************/
+@media screen and (max-width:800px){
+  .vl{
+    display:none;
+  }
+  .des{
+    float:none;
+    width:90%;
+    padding-top:10px;
+    margin-left:20px;
+    margin-right:10px;
+    font-size:15px;
+    height:35vh;
+  }
+  .wrapper{
+    display:block;
+  }
+  .in{
+    float:none;
+    width:100%;
+    font-size:17px;
+  }
+  .image{
+    float:none;
+    display:block;
+    width:85%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .cost{
+    font-size:17px;
+  }
+  .price{
+    font-size:17px;
+  }
+  .amen{
+    height:40px;
+    width:40px;
+  }
+  #view_more{
+    height:40px;
+    width:50%;
+    margin-top:20px;
+  }
+}
 
-
-
-  
+@media screen and (max-width:500px){
+  .vl{
+    display:none;
+  }
+  marquee{
+    display:none;
+  }
+  .des{
+    float:none;
+    width:90%;
+    padding-top:10px;
+    margin-left:20px;
+    margin-right:10px;
+    font-size:15px;
+    height:35vh;
+  }
+  .wrapper{
+    display:block;
+  }
+  .in{
+    float:none;
+    width:100%;
+    font-size:15px;
+  }
+  .image{
+    float:none;
+    display:block;
+    width:100%;
+    margin:0;
+    object-fit: cover;
+  }
+  .cost{
+    font-size:15px;
+  }
+  .price{
+    font-size:15px;
+  }
+  .amen{
+    height:35px;
+    width:35px;
+  }
+  #view_more{
+    height:25px;
+  }
+}
+ 
