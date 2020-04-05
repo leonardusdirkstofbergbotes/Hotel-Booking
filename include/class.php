@@ -91,14 +91,15 @@ class Hotel {
                 
 
         <?php
-        
         echo "<form action=\"booking_page.php\" method=\"post\">";
         echo "<button type=\"submit\" name=\"hotel_id\" value=\"$this->id_name\" id=\"view_more\"><span>Book</span></button>";
         echo "</form>";
         echo "</div>";
+        /*close inside div*/
         
         /*Description under image*/
         echo "<div class=\"vl\">";
+        /*seond inner div*/
         echo "</div>";
         echo "<div class=\"des\">";
         echo "<div class=\"type\">"; 
@@ -107,7 +108,8 @@ class Hotel {
         echo "</div>";
         /*Image*/
         echo "<img class=\"image\" src=\"$this->img\">";
-        echo "</div>";    
+
+        echo "</div>";   
     }
 
 }

@@ -26,10 +26,9 @@
                 <p class="par">Bikini Bottom got its name from the mere fact that most rooms are located underwater.
                 From luxurious suites and comfortable living, your stay could not  get any better.
                 Its location is far from the suburbs and is perfect for luxury accommodation with an amazing oceanfront
-                view. It brings a variety of services at your comfort making you feel far from home in all ways. All
-                your desires for some alone excursion time is brought to you by Bikini Bottom. </p>');
+                view. It brings a variety of services at your comfort making you feel far from home in all ways. </p>');
             $hotel2->img("./images/bikini.jpg");
-            $hotel2->amen(['wifi', 'bar', 'pets allowed', 'farm','pool', 'jacuzzi']);
+            $hotel2->amen(['wifi', 'bar', 'pets allowed','pool', 'jacuzzi']);
 
 
         $hotel3 = new Hotel;
