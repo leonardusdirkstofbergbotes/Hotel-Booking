@@ -83,7 +83,7 @@
                 break;
             case '3':
                 echo "<b>";
-                echo $hote3->total_cost;
+                echo $hotel3->total_cost;
                 echo "</b>";
                 echo "<br/>";
                 echo " @ R";
@@ -93,7 +93,7 @@
                 break;
             case '4':
                 echo "<b>";
-                echo $hote4->total_cost;
+                echo $hotel4->total_cost;
                 echo "</b>";
                 echo "<br/>";
                 echo " @ R";
