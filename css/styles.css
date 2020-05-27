@@ -1,4 +1,12 @@
+html{
+  height: 100%;
+  margin: auto;
+  width: 100%;
+  overflow-Y: scroll;
+}
+
 body{
+  overflow-Y: scroll;
   padding:0;
   margin:0;
   font-family: 'Lora', serif;
@@ -25,12 +33,33 @@ input:valid {
   50% {background-color: rgb(252, 212, 212);}
 }
 
+#number_people{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 39px;
+  margin: 20px 0px;
+}
+
+#number_people label {
+  padding: 0px;
+}
+
+#number_people input {
+  width: 25px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+
 .container {
   background:rgb(219, 198, 152);
   width:25%;
-  margin-top:40px;
+  height: max-content;
+  margin-top:30px;
   margin-left:30px;
-  height:80vh;
   padding: 20px 20px 20px 20px;
   border-radius: 5px;
   background:rgba(46, 45, 45, 0.5);
@@ -234,6 +263,11 @@ label{
     height:100vh;
     padding:0;
     text-align:center;
+  }
+
+  #number_people {
+    width: 80%;
+    margin: auto;
   }
   
   input[type=text], select, textarea {

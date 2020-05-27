@@ -6,6 +6,7 @@
         $_SESSION['username'] = $_POST['firstname'];
         $_SESSION['surname'] = $_POST['lastname'];
         $_SESSION['email'] = $_POST['email'];
+        $_SESSION["people"] = $_POST['people'];
         header("Location: calc.php");
     }
 ?>
@@ -42,6 +43,10 @@
           
           <label for="fname">Email Address</label>
           <input type="email" id="fname" name="email" placeholder="Your Email.." required>
+            <div id="number_people"> 
+                <label for="people">Number of people</label>
+                <input type="number" id="people" name="people" value='1'>
+            </div>
 
           <label for="In">Book In date</label>
           <input type="date" id="datein" name="in" required>

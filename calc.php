@@ -15,7 +15,7 @@
 <body>
 
 <?php
-
+$people = $_SESSION["people"];
     require "include/hotel_info.php";
 
     //display() function will echo all the info of the different hotels

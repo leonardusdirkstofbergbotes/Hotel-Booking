@@ -18,13 +18,6 @@ class Hotel {
     public $amen_describe = [];
     public $total_cost;
 
-    // public function total_days($from_date, $to_date) {
-    //     $start_date = new DateTime($from_date);
-    //     $end_date = new DateTime($to_date);
-    //     $difference = $end_date->diff($start_date)->format("%a");
-    //     $this->days = $difference;
-    // }
-
     public function amen_description(array $des) {
         $this->amen_describe[] = $des;
     }
@@ -39,7 +32,7 @@ class Hotel {
 
     public function rate($var_price) {
         $this->price = $var_price;
-        $this->total_cost = $var_price * $GLOBALS["diff"];
+        $this->total_cost = $var_price * $GLOBALS["diff"] * $GLOBALS['people'];
     }
 
     public function stars($var_stars) {
@@ -74,7 +67,7 @@ class Hotel {
         /*total cost*/
         echo "<hr/>";
         echo "<h2 class=\"cost\">Daily rate:</h2>";
-        echo "<h2 class=\"price\"> R$this->price</h2>";
+        echo "<h2 class=\"price\"> R$this->price p/p</h2>";
         echo "<br/>";
         echo "<h2 class=\"cost\">Total Cost:</h2>";
         echo "<h2 class=\"price\">R$this->total_cost</h2>";

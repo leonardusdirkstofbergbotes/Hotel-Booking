@@ -16,7 +16,10 @@
 </head>
 <body>
 
-<?php include "include/hotel_info.php"; ?>
+<?php 
+    $people = $_SESSION["people"];
+    include "include/hotel_info.php"; 
+?>
 
     <div class="contain mar_pad">
 
