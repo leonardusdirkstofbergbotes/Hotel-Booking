@@ -181,6 +181,12 @@ label{
 }
 
 @media screen and (max-width:768px){
+  .container {
+    height: max-content;
+    width: 40%;
+    margin-top: 20px;
+  }
+
   input[type=text], select, textarea {
     padding:5px;
     margin-top:10px;
